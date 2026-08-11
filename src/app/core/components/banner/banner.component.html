@@ -1,32 +1,28 @@
-<div class="banner-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" [ngStyle]="getBackgroundStyle()">
-  <header fxLayout="column" fxLayoutAlign="center center" fxFlexOrder="1" fxFlexOrder.lt-md="2">
-    <span id="bannerSubtext" [ngStyle]="getSubtitleStyles()">
-      {{ designDetail?.banner_design?.subtitle?.text ?? 'Celebrate Diwali with 70% off' }}
-    </span>
-    <div id="bannerText" [ngStyle]="getTitleStyles()" [@brandAnimation]="brandState">
-      {{ designDetail?.banner_design?.title?.text ?? 'SHIVAS CRACKERS' }}
-    </div>
-    <a href="#products-table">
-      <button class="shop-now-btn" [ngStyle]="getButtonStyles()">
-        {{ designDetail?.banner_design?.button?.text ?? 'SHOP NOW' }}
-      </button>
-    </a>
-  </header>
+<div class="banner-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+  <div class="glass-panel" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+    <header fxLayout="column" fxLayoutAlign="center center" fxFlexOrder="1" fxFlexOrder.lt-md="2">
+      <span id="bannerSubtext" [ngStyle]="getSubtitleStyles()">
+        {{ designDetail?.banner_design?.subtitle?.text ?? 'PREMIUM FIREWORKS FROM SIVAKASI' }}
+      </span>
+      <div id="bannerText" [ngStyle]="getTitleStyles()" [@brandAnimation]="brandState">
+        {{ designDetail?.banner_design?.title?.text ?? 'SRI RAHUL VAIRA CRACKERS' }}
+      </div>
+      <a href="#products-table">
+        <button class="shop-now-btn" [ngStyle]="getButtonStyles()">
+          {{ designDetail?.banner_design?.button?.text ?? 'SHOP NOW' }}
+        </button>
+      </a>
+    </header>
 
-  <img [src]="designDetail?.banner_design?.image?.url ?? 'https://via.placeholder.com/200'" 
-       [ngStyle]="getImageStyles()" 
-       class="banner-img" 
-       alt="Festival crackers" 
-       fxFlexOrder="2" 
-       fxFlexOrder.lt-md="1"
-       @fadeIn>
-
-  <div class="firework"></div>
-  <div class="firework"></div>
-  <div class="firework"></div>
-
-  <div class="pyro">
-    <div class="before"></div>
-    <div class="after"></div>
+    <img [src]="designDetail?.banner_design?.image?.url ?? 'assets/banner.png'" 
+         [ngStyle]="getImageStyles()" 
+         class="banner-img" 
+         alt="Festival crackers" 
+         fxFlexOrder="2" 
+         fxFlexOrder.lt-md="1"
+         @fadeIn>
   </div>
+
+  <div class="floating-orb orb-1"></div>
+  <div class="floating-orb orb-2"></div>
 </div>

@@ -73,8 +73,6 @@ export class BannerComponent {
       'font-size': `${button.fontSize || 1.2}rem`,
       'font-weight': button.fontWeight || 'bold',
       'font-family': button.fontFamily || 'Arial, sans-serif',
-      'color': button.color || '#000000',
-      'background-color': button.backgroundColor || '#FFC107',
       'padding': `${button.padding || 10}px`,
       'border-radius': `${button.borderRadius || 25}px`
     };

@@ -319,7 +319,7 @@ export class ProductsComponent {
     if (type == 'open')
       this.commonService.generatePdf(billData).open();
     else if (type == 'download')
-      this.commonService.generatePdf(billData).download('Shivas-Crackers-Bill');
+      this.commonService.generatePdf(billData).download('Sri-Rahul-Vaira-Crackers-Bill');
     else if (type == 'print')
       this.commonService.generatePdf(billData).print();
   }

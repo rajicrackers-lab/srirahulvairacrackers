@@ -15,7 +15,7 @@ export class CommonService {
   designDetail = new BehaviorSubject<any>({});
 
   sendWhatsApp(orderInfo:any) {
-    let message=`Hi, this is ${orderInfo.name} from ${orderInfo.district}, I recently placed an order for crackers worth ₹${orderInfo.totalAmount} with Shivas Crackers.`;
+    let message=`Hi, this is ${orderInfo.name} from ${orderInfo.district}, I recently placed an order for crackers worth ₹${orderInfo.totalAmount} with Sri Rahul Vaira Crackers.`;
     // Encode the message
     const encodedMessage = encodeURIComponent(message);
 
